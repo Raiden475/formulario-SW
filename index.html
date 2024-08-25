@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>CUAL ES TU MEJOR PERSONAJE</title>  
+    <link rel="stylesheet" href="/CSS/styles.css"> <!-- Enlace a CSS -->  
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <script src="/JS/script.js" defer></script> <!-- Enlace al archivo JS con la ruta correcta -->  
+</head>  
+<body class="fondo-oscuro flex items-center justify-center h-screen">  
+    <form id="miFormulario" class="bg-white p-6 rounded shadow-md">  
+        <div class="mb-4">  
+            <label for="input1" class="block text-gray-700">Nombre:</label>  
+            <input type="text" id="input1" class="mt-1 block w-full border border-gray-300 rounded p-2" required>  
+        </div>  
+        <div class="mb-4">  
+            <label for="input2" class="block text-gray-700">Apellido:</label>  
+            <input type="text" id="input2" class="mt-1 block w-full border border-gray-300 rounded p-2" required>  
+        </div>  
+        <div class="mb-4">  
+            <label for="select" class="block text-gray-700">Selecciona una opción:</label>  
+            <select id="select" class="mt-1 block w-full border border-gray-300 rounded p-2" required>  
+                <option value="">--Seleccione--</option>  
+                <option value="opcion1">Darth Vader</option>  
+                <option value="opcion2">Obi Wan Kenobi</option>  
+                <option value="opcion3">Anakin Skywalker</option>  
+                <option value="opcion4">Han Solo</option>  
+                <option value="opcion5">Leia Organa</option>  
+                <option value="opcion6">Luke Skywalker</option>  
+            </select>  
+        </div>  
+        <div class="mb-4">  
+            <label for="textarea" class="block text-gray-700">Dinos por que es tu preferido:</label>  
+            <textarea id="textarea" class="mt-1 block w-full border border-gray-300 rounded p-2" rows="4" required></textarea>  
+        </div>  
+        <button type="button" id="imprimirBtn" class="bg-blue-500 text-white rounded p-2">Imprimir Datos</button>  
+    </form>  
+</body>  
+</html>
